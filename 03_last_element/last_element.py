@@ -1,5 +1,19 @@
+# done
 def last_element(lst):
-    """Return last item in list (None if list is empty.
+    print(lst)
+    length  = len(lst)
+    print(length)
+    lst.pop(length -1)
+
+
+
+def last_element_solution(lst):
+    if lst:
+        return lst[-1]
+
+
+
+"""Return last item in list (None if list is empty.
     
         >>> last_element([1, 2, 3])
         3
