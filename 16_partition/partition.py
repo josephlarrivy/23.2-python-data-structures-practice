@@ -19,5 +19,24 @@ def partition(lst, fn):
         >>> partition(["hi", None, 6, "bye"], is_string)
         [['hi', 'bye'], [None, 6]]
     """
+    # my work
+    # true_list = []
+    # false_list = []
 
-    
+    # for item in lst:
+    #     def is_even(num):
+    #         return num % 2 == 0
+    #     def is_string(el):
+    #         return isinstance(el, str)
+    #     if fn(item):
+    #         true_list.append(item)
+    #     else:
+    #         false_list.append(item)
+
+    # return [true_list, false_list]
+
+    # solution
+    return {
+        [val for val in lst if fn(val)],
+        [val for val in lst if not fn(val)]
+    }
