@@ -8,8 +8,8 @@ def capitalize(phrase):
         'Only first word'
     """
     # my work
-    # new_phrase = phrase.replace(phrase[0], phrase[0].upper())
-    # return new_phrase 
+    new_phrase = phrase.replace(phrase[0], phrase[0].upper())
+    return new_phrase 
 
     # solution
-    return phrase.capitalize()
+    # return phrase.capitalize()

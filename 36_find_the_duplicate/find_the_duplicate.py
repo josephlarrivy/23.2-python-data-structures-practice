@@ -13,3 +13,22 @@ def find_the_duplicate(nums):
         >>> find_the_duplicate([2, 1, 3, 4]) is None
         True
     """
+
+    # my work
+    # nums.sort()
+    # print(nums)
+
+    # for num in nums:
+    #     if ((num + num) == (num*2)):
+    #        return num
+    #     else:
+    #         return None
+
+    # solution
+
+    seen = set()
+
+    for num in nums:
+        if num in seen:
+            return num
+        seen.add(num)

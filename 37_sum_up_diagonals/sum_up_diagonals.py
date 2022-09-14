@@ -7,6 +7,9 @@ def sum_up_diagonals(matrix):
         ...     [1,   2],
         ...     [30, 40],
         ... ]
+
+            m1 = [[1,2],[30,40]]
+
         >>> sum_up_diagonals(m1)
         73
 
@@ -15,6 +18,29 @@ def sum_up_diagonals(matrix):
         ...    [4, 5, 6],
         ...    [7, 8, 9],
         ... ]
+
+            m2 = [[1, 2, 3],[4, 5, 6],[7, 8, 9],]
+
         >>> sum_up_diagonals(m2)
         30
+
+        >>> m3 = [
+                [[0,0],[0,1],[0,2]],
+                [[1,0],[1,1],[1,2]],
+                [[2,0],[2,1],[2,2]]
+            ]
     """
+
+    # my work
+    sum  = 0
+    for i in range(len(matrix)):
+        sum = sum + matrix[i][i]
+        sum = sum + matrix[i][i-1]
+    return sum
+
+    # solution
+    # total = 0
+    # for i in range(len(matrix)):
+    #     total += matrix[i][i]
+    #     total += matrix[i][-1 - i]
+    # return total

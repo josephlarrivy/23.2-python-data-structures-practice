@@ -13,13 +13,13 @@ def sum_floats(nums):
     # if something is a float!
 
     # my work 1
-    # sum = 0
-    # for num in nums:
-    #     if isinstance(num, float):
-    #         sum = sum + num
-    #     else:
-    #         None
-    # return sum
+    sum = 0
+    for num in nums:
+        if isinstance(num, float):
+            sum = sum + num
+        else:
+            None
+    return sum
 
     # solution
-    return sum([num for num in nums if isinstance(num, float)])
+    # return sum([num for num in nums if isinstance(num, float)])
