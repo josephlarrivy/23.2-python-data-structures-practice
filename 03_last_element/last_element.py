@@ -1,8 +1,6 @@
 # done
 def last_element(lst):
-    print(lst)
     length  = len(lst)
-    print(length)
     lst.pop(length -1)
 
 

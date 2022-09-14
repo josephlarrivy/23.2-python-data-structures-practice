@@ -1,3 +1,6 @@
+from turtle import clear
+
+
 def frequency(lst, search_term):
     """Return frequency of term in lst.
     
@@ -7,3 +10,4 @@ def frequency(lst, search_term):
         >>> frequency([1, 4, 3], 7)
         0
     """
+    return lst.count(search_term)
